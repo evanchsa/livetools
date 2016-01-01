@@ -37,7 +37,7 @@ void liveir_about(void)
 	gtk_container_border_width(GTK_CONTAINER(textbox), 10);
 	gtk_container_add(GTK_CONTAINER(frame), textbox);
 
-	label = gtk_label_new("Stephen Evanchik <evanchsa@clarkson.edu>\n");
+	label = gtk_label_new("Stephen Evanchik <evanchsa@gmail.com>\n");
 
 	gtk_box_pack_start_defaults(GTK_BOX(textbox), label);
 

@@ -20,7 +20,7 @@
                              -------------------
     begin                : Sat Dec 22 17:04:30 EST 2001
     copyright            : (C) 2001 by Stephen Evanchik
-    email                : evanchsa@clarkson.edu
+    email                : evanchsa@gmail.com
  ***************************************************************************/
 
 #include "liveird.h"

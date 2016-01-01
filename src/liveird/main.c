@@ -20,7 +20,7 @@
                              -------------------
     begin                : Mon Dec 24 14:56:18 EST 2001
     copyright            : (C) 2001 by Stephen Evanchik
-    email                : evanchsa@clarkson.edu
+    email                : evanchsa@gmail.com
  ***************************************************************************/
 
 #ifdef HAVE_CONFIG_H
@@ -231,7 +231,7 @@ void print_usage(void)
 	printf("\n");
 
 	printf("Creative Live!Drive IR daemon version %s.\n", VERSION);
-	printf("Copyright 2003 Stephen Evanchik <evanchsa@clarkson.edu>\n");
+	printf("Copyright 2003 Stephen Evanchik <evanchsa@gmail.com>\n");
 	printf("Usage: liveird -d -R <filename> -D <device node>\n\n");
 	printf("\t-d\t\tDebug mode, do not fork to the background and display verbose messages\n");
 	printf("\t-D\t\tUse this device to read input from the remote (Default: %s)\n", device_file);

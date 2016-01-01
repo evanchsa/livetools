@@ -20,7 +20,7 @@
                              -------------------
     begin                : Mon Dec 24 2001
     copyright            : (C) 2001 by Stephen Evanchik
-    email                : evanchsa@clarkson.edu
+    email                : evanchsa@gmail.com
  ***************************************************************************/
 
 #include "livetools.h"
