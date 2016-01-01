@@ -1,0 +1,1 @@
+SUBDIRS = xmms_liveir

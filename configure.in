@@ -1,0 +1,36 @@
+AC_INIT(acinclude.m4)
+AM_INIT_AUTOMAKE(livetools,1.2.3)
+AM_CONFIG_HEADER(config.h)
+
+dnl Program initialation
+AC_PROG_INSTALL
+AC_PROG_CC
+AC_PROG_CXX
+AC_PROG_RANLIB
+AC_PROG_LIBTOOL
+
+dnl Common build variables
+livetools_includes="-I\$(top_srcdir)/src/libliveir"
+
+livetools_libraries="-L\$(top_srcdir)/src/libliveir/"
+
+libliveir_somajor="1"
+libliveir_sominor="0"
+libliveir_subminor="0"
+
+AC_SUBST(livetools_includes)
+AC_SUBST(livetools_libraries)
+
+AC_SUBST(libliveir_somajor)
+AC_SUBST(libliveir_sominor)
+AC_SUBST(libliveir_subminor)
+
+dnl Write the Makefiles
+AC_OUTPUT(Makefile				\
+          doc/Makefile				\
+          src/Makefile				\
+          src/libliveir/Makefile		\
+          src/liveird/Makefile			\
+          src/plugins/Makefile			\
+          src/plugins/xmms_liveir/Makefile	\
+         )

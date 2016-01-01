@@ -1,0 +1,53 @@
+1.2.3 (March 2, 2003)
+	- Fixed XMMS Plugin configuration
+	- Added RM-1000W from Audigy 2 Platinum
+
+1.2.2 (March 1, 2003)
+	- Cleaned up build system to allow easier access to library routines
+	- Updated documentation
+
+1.2.1 (February 25, 2003)
+	- Finished rewrite of decoding engine
+	- Reorganized code
+	- Various cleanups
+	- Commenting
+	
+1.2.0 (December 23, 2002)
+	- Added libliveir, it's easy to add decoders!
+	- Added the ability to add multiple remote decoders
+	  Decoders are triggered based on remote type!
+	- Added more documentation
+	- Updated build environment, it's much cleaner
+	- New liveird based on libliveir architecture
+	- Minor code cleanups in ALL source code
+
+1.1.0 (May 13, 2002)
+	- Moved to a normal automake system instead of KDevelop based
+	- Fixed bugs and minor code touch ups
+	- Beginnings of a dynamic remote environment ;)
+	- Decision to move all site configuration to $PREIFX/share/livetools
+
+1.0.0 (January 6, 2002)
+	- Updated main thread to recover from liveird failures in XMMS plugin
+	- Fixed web site reference in README
+	- Added configuration dialog in XMMS plugin
+
+0.5.3 (December 30, 2001)
+	- Finished support for iR2000 in XMMS plugin
+
+0.5.2 (December 29, 2001)
+	- Finished support for RM-900 in XMMS plugin
+
+0.5.1 (January 6, 2002)
+	- Fixed early termination problem
+
+0.5.0 (December 30, 2001)
+	- Finished support for RM-900
+	- Finished support for iR2000
+	- Added command line options
+
+0.1.0 (December 30, 2001)
+	- Finished RM-900 Key list
+	- Finished iR2000 Key list
+	- Added Creative MIDI Constants for Manufacturer and Device IDs
+	- libliveir.so work has begun

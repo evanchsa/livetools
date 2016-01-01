@@ -1,0 +1,71 @@
+livetools - Creative Live!Drive IR Daemon, interface library and XMMS plugin
+
+http://cosiforge.cosi.clarkson.edu/projects/livetools
+
+* Introduction
+
+The Live!Drive IR that ships with SoundBlaster Live! 5.1 Platinum has a small 
+infrared port on it that allows the user to use his/her computer like a home 
+entertainment system. The IR port is actually a MIDI device that sends MIDI 
+System Exclusive commands whenever a key is pressed.
+
+* Plugins
+
+XMMS
+
+This is a simple plugin that interfaces with liveird. You need both the liveird 
+and liveir_sdk packages installed. You should have received them with the 
+livetools distribution. This is a General plugin; look in that tab in XMMS' 
+preferences and enable it. You should also configure the device that liveird 
+reads from.
+
+* Remotes Supported:
+
+Creative RM-900
+- Bundled with the Live!Drive IR and SoundBlaster Live! Platinum 5.1 kit.
+- The Audigy uses this remote too, so when Linux has support for the IR port on
+  that I imagine it will work without any changes.
+
+Creative iR2000
+- Bundled with the 52x iNFRA CD-Drive
+
+* Installation
+
+See INSTALL for general configure help. In order to use this daemon you need to 
+have libliveir installed. You should have received a copy of it if you 
+downloaded the livetools distribution. To install:
+
+	./configure
+	make
+	make install (generally as root)
+
+The distribution is installed in /usr/local by default. The XMMS plugin 
+can be found in the General Plugins section.  
+
+* Configuration
+
+Changes must be made to /etc/modules.conf .
+
+In order for the daemon to recieve the key codes from the remote you must 
+enable the IR port:
+
+	# ALSA Specific Example
+	alias snd-card-0 snd-card-emu10k1
+	options snd-card-emu10k1 snd_enable_ir=1
+
+ALSA Drivers
+
+If you use ALSA, use the /dev/midi device. I think this device is 
+acutally part of the OSS emulation layer, the native ALSA device 
+will also work I think.
+
+OSS Drivers
+
+The devices /dev/midi0? must be used where ? is a valid device number. 
+Usually it's MIDI device 0.
+
+* Credits
+
+Chris Carter - for letting me steal his iR2000 remote
+Arnaud de Bossoreille de Ribou <bozo@via.ecp.fr> - for figuring out how to 
+initialize the IR port among other things

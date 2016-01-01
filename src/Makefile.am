@@ -1,0 +1,1 @@
+SUBDIRS = libliveir liveird plugins

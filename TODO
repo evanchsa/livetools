@@ -1,0 +1,2 @@
+- Add remote key read/write library routines
+- Pass LIRC messages instead of current keycodes
